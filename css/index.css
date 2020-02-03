@@ -20,11 +20,9 @@ h1 {
 }
 h2 {
   font-size: 3.2rem;
-  padding-bottom: 10px;
 }
 h4 {
   font-size: 2.5rem;
-  padding-bottom: 10px;
 }
 p {
   line-height: 1.5;
@@ -44,7 +42,8 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid gray;
+  background-color: #F1F1F1;
+  border-radius: 8px;
 }
 .navBox div {
   width: 100%;
@@ -52,7 +51,11 @@ img {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: 2px solid blue;
+  border: 2px solid #8B008B;
+  border-radius: 8px;
+}
+.navBox div h1 {
+  color: #8B008B;
 }
 .navBox nav {
   width: 100%;
@@ -64,7 +67,50 @@ img {
   text-decoration: none;
   font-size: 1.6rem;
   margin: 2%;
+  color: #23293B;
 }
 .navBox a:hover {
-  color: green;
+  color: #1E90FF;
+}
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.home header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 800px;
+}
+.home header img {
+  border-radius: 8px;
+}
+.home section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+button {
+  width: 11rem;
+  height: 3.8rem;
+  color: #F6F7F8;
+  background-color: #22283A;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+button:hover {
+  color: #22283A;
+  background-color: #F6F7F8;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
