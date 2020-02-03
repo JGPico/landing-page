@@ -1,0 +1,37 @@
+.home {
+    .customDisplay(center, center);
+    flex-direction: column;
+
+    img{
+        border-radius: 8px;
+    }
+
+    header {
+        .customDisplay(center, center);
+        flex-direction: column;
+        max-width: 800px;   
+    }
+
+    section {
+        .customDisplay(center, center);
+        flex-direction: column;
+
+        img {
+            display: none;
+
+            @media @tablet {
+                display: block;
+            }
+        }
+
+    }
+}
+
+button {
+    .customButton();
+
+    &:hover {
+        color: @button-hover-color;
+        background-color: @button-hover-bg;
+    }
+}

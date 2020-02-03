@@ -1,0 +1,15 @@
+.customDisplay(@justify, @align){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.customButton(@font-color: @porcelain, @bg-color: @btn-bg-color) {
+    width: 11rem;
+    height: 3.8rem;
+    color: @font-color;
+    background-color: @bg-color;
+    font-size: 2rem;
+    .customDisplay(center, center);
+    border-radius: 8px;
+}
