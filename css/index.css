@@ -78,6 +78,9 @@ img {
   align-items: center;
   flex-direction: column;
 }
+.home img {
+  border-radius: 8px;
+}
 .home header {
   display: flex;
   justify-content: center;
@@ -85,14 +88,19 @@ img {
   flex-direction: column;
   max-width: 800px;
 }
-.home header img {
-  border-radius: 8px;
-}
 .home section {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+.home section img {
+  display: none;
+}
+@media (min-width:800px) {
+  .home section img {
+    display: block;
+  }
 }
 button {
   width: 11rem;
@@ -104,6 +112,47 @@ button {
   justify-content: center;
   align-items: center;
   border-radius: 8px;
+}
+button:hover {
+  color: #22283A;
+  background-color: #F6F7F8;
+}
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.about h1 {
+  font-size: 3.2rem;
+}
+.about header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 800px;
+}
+.about section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.about section img {
+  border-radius: 8px;
+}
+button {
+  width: 11rem;
+  height: 3.8rem;
+  color: #F6F7F8;
+  background-color: #22283A;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  margin-top: 2%;
 }
 button:hover {
   color: #22283A;
