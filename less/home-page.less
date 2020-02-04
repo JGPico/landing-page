@@ -2,6 +2,7 @@
     .customDisplay(center, center);
     flex-direction: column;
 
+
     img{
         border-radius: 8px;
     }
@@ -12,13 +13,31 @@
         max-width: 800px;   
     }
 
+    .sectionContainer {
+        .customDisplay(center, center);
+        flex-direction: column;
+
+        @media @desktop {
+            flex-flow: row wrap;
+        }
+
+    }
+
     section {
         .customDisplay(center, center);
         flex-direction: column;
 
-        img {
-            display: none;
 
+        img {
+            display: none; 
+
+            @media @desktop {
+                display: block;
+                max-height: 450px;
+            }
+        }
+
+        .tabletImg {
             @media @tablet {
                 display: block;
             }

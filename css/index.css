@@ -92,6 +92,17 @@ img {
   flex-direction: column;
   max-width: 800px;
 }
+.home .sectionContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media (min-width:1000px) {
+  .home .sectionContainer {
+    flex-flow: row wrap;
+  }
+}
 .home section {
   display: flex;
   justify-content: center;
@@ -101,8 +112,14 @@ img {
 .home section img {
   display: none;
 }
-@media (min-width:800px) {
+@media (min-width:1000px) {
   .home section img {
+    display: block;
+    max-height: 450px;
+  }
+}
+@media (min-width:800px) {
+  .home section .tabletImg {
     display: block;
   }
 }
