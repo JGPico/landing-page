@@ -54,6 +54,11 @@ img {
   border: 2px solid #8B008B;
   border-radius: 8px;
 }
+@media (min-width:800px) {
+  .navBox div {
+    max-width: 800px;
+  }
+}
 .navBox div h1 {
   color: #8B008B;
 }
@@ -141,22 +146,6 @@ button:hover {
 }
 .about section img {
   border-radius: 8px;
-}
-button {
-  width: 11rem;
-  height: 3.8rem;
-  color: #F6F7F8;
-  background-color: #22283A;
-  font-size: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 8px;
-  margin-top: 2%;
-}
-button:hover {
-  color: #22283A;
-  background-color: #F6F7F8;
 }
 footer {
   display: flex;

@@ -3,12 +3,17 @@
     background-color: @nav-bg;
     border-radius: 8px;
 
+
     div {
         width: 100%;
         .customDisplay(center, center);
         flex-direction: column;
         border: 2px solid @droomPurple;
         border-radius: 8px;
+
+        @media @tablet {
+            max-width: 800px;
+        }
 
         h1{
             color: @droomPurple;
