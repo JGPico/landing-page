@@ -2,6 +2,7 @@
     h1{
         font-size: 3.2rem;
     }
+    
     .customDisplay(center, center);
     flex-direction: column;
 
@@ -9,13 +10,11 @@
         .customDisplay(center, center);
         flex-direction: column;
         max-width: 800px;
-
     }
 
     section {
         .customDisplay(center, center);
         flex-direction: column;
-        
 
         @media @tablet {
             border-bottom: 2px solid @border-color;
@@ -57,5 +56,8 @@
 
     .last {
         border: none;
+        a {
+            margin: 2%, 0;
+        }
     }
 }

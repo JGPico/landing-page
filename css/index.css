@@ -67,9 +67,6 @@ img {
     max-width: 800px;
   }
 }
-.navBox div h1 {
-  color: #8B008B;
-}
 .navBox nav {
   width: 100%;
   display: -ms-flex;
@@ -242,6 +239,9 @@ button:hover {
 }
 .about .last {
   border: none;
+}
+.about .last a {
+  margin: 2%, 0;
 }
 footer {
   display: -ms-flex;
