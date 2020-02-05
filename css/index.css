@@ -7,6 +7,8 @@ html {
 html,
 body {
   font-family: 'Roboto', sans-serif;
+  background-image: radial-gradient(#FFFFFF 50%, #8B008B);
+  background-attachment: fixed;
 }
 h1,
 h2,
@@ -91,6 +93,11 @@ img {
   align-items: center;
   flex-direction: column;
   max-width: 800px;
+}
+@media (min-width:1000px) {
+  .home header img {
+    max-width: 1000px;
+  }
 }
 .home .sectionContainer {
   display: flex;

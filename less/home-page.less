@@ -10,7 +10,13 @@
     header {
         .customDisplay(center, center);
         flex-direction: column;
-        max-width: 800px;   
+        max-width: 800px;  
+        
+        @media @desktop {
+            img {
+                max-width: 1000px;
+            }
+        }
     }
 
     .sectionContainer {
