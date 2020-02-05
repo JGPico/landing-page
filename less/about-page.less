@@ -16,8 +16,43 @@
         .customDisplay(center, center);
         flex-direction: column;
 
+        @media @tablet {
+            border-bottom: 2px solid @border-color;
+        }
+
         img{
             border-radius: 8px;
         }
+    }
+
+    .team{
+        .customDisplay(center, center);
+        flex-direction: column;
+
+        @media @tablet {
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+    }
+
+    .member {
+        .customDisplay(space-between, center);
+        flex-direction: column;
+        border-bottom: 2px solid @border-color;
+        padding-bottom: 5%;
+
+        @media @tablet {
+            width: 45%;
+            border: none;
+        }
+
+        img {
+            max-width: 180px;
+        }
+
+    }
+
+    .last {
+        border: none;
     }
 }

@@ -7,8 +7,6 @@ html {
 html,
 body {
   font-family: 'Roboto', sans-serif;
-  background-image: radial-gradient(#FFFFFF 50%, #8B008B);
-  background-attachment: fixed;
 }
 h1,
 h2,
@@ -23,13 +21,18 @@ h1 {
 h2 {
   font-size: 3.2rem;
 }
+h3 {
+  font-size: 2.5rem;
+}
 h4 {
   font-size: 2.5rem;
 }
-p {
+p,
+a {
   line-height: 1.5;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   padding-bottom: 10px;
+  text-decoration: none;
 }
 img {
   max-width: 100%;
@@ -108,6 +111,10 @@ img {
 @media (min-width:1000px) {
   .home .sectionContainer {
     flex-flow: row wrap;
+    justify-content: space-evenly;
+  }
+  .home .sectionContainer .container {
+    width: 45%;
   }
 }
 .home section {
@@ -168,8 +175,45 @@ button:hover {
   align-items: center;
   flex-direction: column;
 }
+@media (min-width:800px) {
+  .about section {
+    border-bottom: 2px solid #454A59;
+  }
+}
 .about section img {
   border-radius: 8px;
+}
+.about .team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media (min-width:800px) {
+  .about .team {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+.about .member {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: 2px solid #454A59;
+  padding-bottom: 5%;
+}
+@media (min-width:800px) {
+  .about .member {
+    width: 45%;
+    border: none;
+  }
+}
+.about .member img {
+  max-width: 180px;
+}
+.about .last {
+  border: none;
 }
 footer {
   display: flex;
