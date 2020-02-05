@@ -44,12 +44,16 @@ img {
   margin: 0 auto;
 }
 .navBox {
+  display: -ms-flex;
+  display: -webkit-flex;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .navBox div {
   width: 100%;
+  display: -ms-flex;
+  display: -webkit-flex;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,6 +72,8 @@ img {
 }
 .navBox nav {
   width: 100%;
+  display: -ms-flex;
+  display: -webkit-flex;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,6 +88,8 @@ img {
   color: #1E90FF;
 }
 .home {
+  display: -ms-flex;
+  display: -webkit-flex;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,6 +99,8 @@ img {
   border-radius: 8px;
 }
 .home header {
+  display: -ms-flex;
+  display: -webkit-flex;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -103,6 +113,8 @@ img {
   }
 }
 .home .sectionContainer {
+  display: -ms-flex;
+  display: -webkit-flex;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -118,6 +130,8 @@ img {
   }
 }
 .home section {
+  display: -ms-flex;
+  display: -webkit-flex;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -144,6 +158,8 @@ button {
   background-color: #22283A;
   font-size: 2rem;
   margin-top: 2%;
+  display: -ms-flex;
+  display: -webkit-flex;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -154,6 +170,8 @@ button:hover {
   background-color: #F6F7F8;
 }
 .about {
+  display: -ms-flex;
+  display: -webkit-flex;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -163,6 +181,8 @@ button:hover {
   font-size: 3.2rem;
 }
 .about header {
+  display: -ms-flex;
+  display: -webkit-flex;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -170,6 +190,8 @@ button:hover {
   max-width: 800px;
 }
 .about section {
+  display: -ms-flex;
+  display: -webkit-flex;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -184,9 +206,11 @@ button:hover {
   border-radius: 8px;
 }
 .about .team {
+  display: -ms-flex;
+  display: -webkit-flex;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
   flex-direction: column;
 }
 @media (min-width:800px) {
@@ -196,16 +220,20 @@ button:hover {
   }
 }
 .about .member {
+  display: -ms-flex;
+  display: -webkit-flex;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-direction: column;
   border-bottom: 2px solid #454A59;
   padding-bottom: 5%;
+  flex: 1;
 }
 @media (min-width:800px) {
   .about .member {
     width: 45%;
+    height: 100%;
     border: none;
   }
 }
@@ -216,6 +244,8 @@ button:hover {
   border: none;
 }
 footer {
+  display: -ms-flex;
+  display: -webkit-flex;
   display: flex;
   justify-content: center;
   align-items: center;

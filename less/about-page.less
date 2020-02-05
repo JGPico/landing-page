@@ -15,6 +15,7 @@
     section {
         .customDisplay(center, center);
         flex-direction: column;
+        
 
         @media @tablet {
             border-bottom: 2px solid @border-color;
@@ -26,7 +27,7 @@
     }
 
     .team{
-        .customDisplay(center, center);
+        .customDisplay(center, baseline);
         flex-direction: column;
 
         @media @tablet {
@@ -36,13 +37,15 @@
     }
 
     .member {
-        .customDisplay(space-between, center);
+        .customDisplay(space-around, center);
         flex-direction: column;
         border-bottom: 2px solid @border-color;
         padding-bottom: 5%;
+        flex: 1;
 
         @media @tablet {
             width: 45%;
+            height: 100%;
             border: none;
         }
 
