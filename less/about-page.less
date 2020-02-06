@@ -28,13 +28,11 @@
     .team{
         .customDisplay(center, baseline);
         flex-direction: column;
-        border: 2px solid blue;
-        flex: 1;
 
         @media @tablet {
-            flex-direction: row;
-            // justify-content: stretch;
-            // align-items: stretch;
+            flex-flow: row wrap;
+            justify-content: stretch;
+            align-items: center;
         }
     }
 
@@ -43,22 +41,28 @@
         flex-direction: column;
         border-bottom: 2px solid @border-color;
         padding-bottom: 5%;
-        padding-left: 1%;
-        padding-right: 1%;
+        padding-left: 2%;
+        padding-right: 2%;
         flex: 1;
 
+
+
         @media @tablet {
-            justify-content: flex-start;
             width: 45%;
             height: 100%;
-            border: none;
-            border: 2px solid black;
+            border: none;  
         }
 
         img {
             max-width: 180px;
         }
 
+    }
+
+    .react {
+        @media @tablet {
+            height: 50rem;
+        }
     }
 
     .last {
