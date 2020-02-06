@@ -149,21 +149,22 @@ img {
   }
 }
 button {
-  width: 11rem;
+  width: 14rem;
   height: 3.8rem;
-  color: #F6F7F8;
-  background-color: #22283A;
-  font-size: 2rem;
+  color: #FFFFFF;
+  background-color: #9B51E0;
+  font-size: 1.8rem;
   margin-top: 2%;
   display: -ms-flex;
   display: -webkit-flex;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 8px;
+  border-radius: 35px;
+  cursor: pointer;
 }
 button:hover {
-  color: #22283A;
+  color: #9B51E0;
   background-color: #F6F7F8;
 }
 .about {
