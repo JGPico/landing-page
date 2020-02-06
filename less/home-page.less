@@ -2,6 +2,9 @@
     .customDisplay(center, center);
     flex-direction: column;
 
+    .introP {
+        font-size: 2rem;
+    }
 
     img{
         border-radius: 8px;
@@ -22,10 +25,14 @@
     .sectionContainer {
         .customDisplay(center, center);
         flex-direction: column;
+        
 
         @media @desktop {
             flex-flow: row wrap;
-            justify-content: space-evenly;
+            justify-content: stretch;
+            align-items: stretch;
+            flex: 1;
+            
             .container {
                 width: 45%;
             }
@@ -36,20 +43,28 @@
     section {
         .customDisplay(center, center);
         flex-direction: column;
+        padding: 1%;
 
+        @media @desktop {
+            flex-grow: 1;
+            justify-content: space-between;
+            
+            
+        }
 
         img {
             display: none; 
 
             @media @desktop {
-                display: block;
-                max-height: 450px;
+                display: flex;
+                height: 400px;
+                
             }
         }
 
         .tabletImg {
             @media @tablet {
-                display: block;
+                display: flex;
             }
         }
 
@@ -63,4 +78,8 @@ button {
         color: @button-hover-color;
         background-color: @button-hover-bg;
     }
+}
+
+.buttonTag {
+    margin-top: 2%;
 }
