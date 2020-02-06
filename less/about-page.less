@@ -2,6 +2,7 @@
     h1{
         font-size: 3.2rem;
     }
+    
     .customDisplay(center, center);
     flex-direction: column;
 
@@ -9,15 +10,54 @@
         .customDisplay(center, center);
         flex-direction: column;
         max-width: 800px;
-
     }
 
     section {
         .customDisplay(center, center);
         flex-direction: column;
 
+        @media @tablet {
+            border-bottom: 2px solid @border-color;
+        }
+
         img{
             border-radius: 8px;
+        }
+    }
+
+    .team{
+        .customDisplay(center, baseline);
+        flex-direction: column;
+
+        @media @tablet {
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+    }
+
+    .member {
+        .customDisplay(space-around, center);
+        flex-direction: column;
+        border-bottom: 2px solid @border-color;
+        padding-bottom: 5%;
+        flex: 1;
+
+        @media @tablet {
+            width: 45%;
+            height: 100%;
+            border: none;
+        }
+
+        img {
+            max-width: 180px;
+        }
+
+    }
+
+    .last {
+        border: none;
+        a {
+            margin: 2%, 0;
         }
     }
 }

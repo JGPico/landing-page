@@ -1,4 +1,6 @@
 .customDisplay(@justify, @align){
+    display: -ms-flex;
+	display: -webkit-flex;
     display: flex;
     justify-content: @justify;
     align-items: @align;
@@ -10,6 +12,7 @@
     color: @font-color;
     background-color: @bg-color;
     font-size: 2rem;
+    margin-top: 2%;
     .customDisplay(center, center);
     border-radius: 8px;
 }

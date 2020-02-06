@@ -2,6 +2,7 @@
     .customDisplay(center, center);
     flex-direction: column;
 
+
     img{
         border-radius: 8px;
     }
@@ -9,16 +10,44 @@
     header {
         .customDisplay(center, center);
         flex-direction: column;
-        max-width: 800px;   
+        max-width: 800px;  
+        
+        @media @desktop {
+            img {
+                max-width: 1000px;
+            }
+        }
+    }
+
+    .sectionContainer {
+        .customDisplay(center, center);
+        flex-direction: column;
+
+        @media @desktop {
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            .container {
+                width: 45%;
+            }
+        }
+
     }
 
     section {
         .customDisplay(center, center);
         flex-direction: column;
 
-        img {
-            display: none;
 
+        img {
+            display: none; 
+
+            @media @desktop {
+                display: block;
+                max-height: 450px;
+            }
+        }
+
+        .tabletImg {
             @media @tablet {
                 display: block;
             }

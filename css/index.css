@@ -13,7 +13,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Poppins', sans-serif;
 }
 h1 {
   font-size: 4rem;
@@ -21,13 +21,18 @@ h1 {
 h2 {
   font-size: 3.2rem;
 }
+h3 {
+  font-size: 2.5rem;
+}
 h4 {
   font-size: 2.5rem;
 }
-p {
+p,
+a {
   line-height: 1.5;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   padding-bottom: 10px;
+  text-decoration: none;
 }
 img {
   max-width: 100%;
@@ -39,26 +44,33 @@ img {
   margin: 0 auto;
 }
 .navBox {
+  display: -ms-flex;
+  display: -webkit-flex;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #F1F1F1;
-  border-radius: 8px;
 }
 .navBox div {
   width: 100%;
+  display: -ms-flex;
+  display: -webkit-flex;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   border: 2px solid #8B008B;
+  background-color: #F1F1F1;
   border-radius: 8px;
 }
-.navBox div h1 {
-  color: #8B008B;
+@media (min-width:800px) {
+  .navBox div {
+    max-width: 800px;
+  }
 }
 .navBox nav {
   width: 100%;
+  display: -ms-flex;
+  display: -webkit-flex;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,6 +85,8 @@ img {
   color: #1E90FF;
 }
 .home {
+  display: -ms-flex;
+  display: -webkit-flex;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,13 +96,39 @@ img {
   border-radius: 8px;
 }
 .home header {
+  display: -ms-flex;
+  display: -webkit-flex;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   max-width: 800px;
 }
+@media (min-width:1000px) {
+  .home header img {
+    max-width: 1000px;
+  }
+}
+.home .sectionContainer {
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media (min-width:1000px) {
+  .home .sectionContainer {
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  }
+  .home .sectionContainer .container {
+    width: 45%;
+  }
+}
 .home section {
+  display: -ms-flex;
+  display: -webkit-flex;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -97,8 +137,14 @@ img {
 .home section img {
   display: none;
 }
-@media (min-width:800px) {
+@media (min-width:1000px) {
   .home section img {
+    display: block;
+    max-height: 450px;
+  }
+}
+@media (min-width:800px) {
+  .home section .tabletImg {
     display: block;
   }
 }
@@ -108,6 +154,9 @@ button {
   color: #F6F7F8;
   background-color: #22283A;
   font-size: 2rem;
+  margin-top: 2%;
+  display: -ms-flex;
+  display: -webkit-flex;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -118,6 +167,8 @@ button:hover {
   background-color: #F6F7F8;
 }
 .about {
+  display: -ms-flex;
+  display: -webkit-flex;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -127,6 +178,8 @@ button:hover {
   font-size: 3.2rem;
 }
 .about header {
+  display: -ms-flex;
+  display: -webkit-flex;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -134,31 +187,65 @@ button:hover {
   max-width: 800px;
 }
 .about section {
+  display: -ms-flex;
+  display: -webkit-flex;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
+@media (min-width:800px) {
+  .about section {
+    border-bottom: 2px solid #454A59;
+  }
+}
 .about section img {
   border-radius: 8px;
 }
-button {
-  width: 11rem;
-  height: 3.8rem;
-  color: #F6F7F8;
-  background-color: #22283A;
-  font-size: 2rem;
+.about .team {
+  display: -ms-flex;
+  display: -webkit-flex;
   display: flex;
   justify-content: center;
-  align-items: center;
-  border-radius: 8px;
-  margin-top: 2%;
+  align-items: baseline;
+  flex-direction: column;
 }
-button:hover {
-  color: #22283A;
-  background-color: #F6F7F8;
+@media (min-width:800px) {
+  .about .team {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+.about .member {
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: 2px solid #454A59;
+  padding-bottom: 5%;
+  flex: 1;
+}
+@media (min-width:800px) {
+  .about .member {
+    width: 45%;
+    height: 100%;
+    border: none;
+  }
+}
+.about .member img {
+  max-width: 180px;
+}
+.about .last {
+  border: none;
+}
+.about .last a {
+  margin: 2%, 0;
 }
 footer {
+  display: -ms-flex;
+  display: -webkit-flex;
   display: flex;
   justify-content: center;
   align-items: center;
