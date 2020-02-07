@@ -30,8 +30,9 @@
         flex-direction: column;
 
         @media @tablet {
-            flex-direction: row;
-            justify-content: space-evenly;
+            flex-flow: row wrap;
+            justify-content: stretch;
+            align-items: center;
         }
     }
 
@@ -40,18 +41,28 @@
         flex-direction: column;
         border-bottom: 2px solid @border-color;
         padding-bottom: 5%;
+        padding-left: 2%;
+        padding-right: 2%;
         flex: 1;
+
+
 
         @media @tablet {
             width: 45%;
             height: 100%;
-            border: none;
+            border: none;  
         }
 
         img {
             max-width: 180px;
         }
 
+    }
+
+    .react {
+        @media @tablet {
+            height: 50rem;
+        }
     }
 
     .last {

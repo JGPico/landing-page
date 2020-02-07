@@ -92,6 +92,9 @@ img {
   align-items: center;
   flex-direction: column;
 }
+.home .introP {
+  font-size: 2rem;
+}
 .home img {
   border-radius: 8px;
 }
@@ -120,7 +123,9 @@ img {
 @media (min-width:1000px) {
   .home .sectionContainer {
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: stretch;
+    align-items: stretch;
+    flex: 1;
   }
   .home .sectionContainer .container {
     width: 45%;
@@ -133,38 +138,49 @@ img {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 1%;
+}
+@media (min-width:1000px) {
+  .home section {
+    flex-grow: 1;
+    justify-content: space-between;
+  }
 }
 .home section img {
   display: none;
 }
 @media (min-width:1000px) {
   .home section img {
-    display: block;
-    max-height: 450px;
+    display: flex;
+    height: 400px;
   }
 }
 @media (min-width:800px) {
   .home section .tabletImg {
-    display: block;
+    display: flex;
   }
 }
 button {
-  width: 11rem;
+  width: 14rem;
   height: 3.8rem;
   color: #F6F7F8;
   background-color: #22283A;
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-top: 2%;
   display: -ms-flex;
   display: -webkit-flex;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 8px;
+  border-radius: 35px;
+  cursor: pointer;
 }
 button:hover {
   color: #22283A;
   background-color: #F6F7F8;
+}
+.buttonTag {
+  margin-top: 2%;
 }
 .about {
   display: -ms-flex;
@@ -212,8 +228,9 @@ button:hover {
 }
 @media (min-width:800px) {
   .about .team {
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-flow: row wrap;
+    justify-content: stretch;
+    align-items: center;
   }
 }
 .about .member {
@@ -225,6 +242,8 @@ button:hover {
   flex-direction: column;
   border-bottom: 2px solid #454A59;
   padding-bottom: 5%;
+  padding-left: 2%;
+  padding-right: 2%;
   flex: 1;
 }
 @media (min-width:800px) {
@@ -236,6 +255,11 @@ button:hover {
 }
 .about .member img {
   max-width: 180px;
+}
+@media (min-width:800px) {
+  .about .react {
+    height: 50rem;
+  }
 }
 .about .last {
   border: none;
